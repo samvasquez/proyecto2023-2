@@ -1,0 +1,9 @@
+body {
+    background-image: url('img/IMG_20230310_060301.png');
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-attachment: fixed; /* Fijar la imagen de fondo */
+    /* Puedes ajustar otros estilos como el color de texto, márgenes, etc. */
+  }
+
+  

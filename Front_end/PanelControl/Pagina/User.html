@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>panel Usuario</title>
+   <link rel="stylesheet" href="../Recursos/materialize/css/materialize.min.css">
+   <style>
+      /* Establece la imagen de fondo */
+      body {
+          background-image: url('../Recursos/img/IMG_20230310_060301.png');
+          background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+          background-repeat: no-repeat;
+          background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
+      }
+
+      /* Estilo para el contenido en el centro de la página */
+      .content {
+          text-align: center;
+          padding: 100px;
+      }
+  </style>
+</head>
+<body class >
+
+   <nav class=" blue darken-4">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">User</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+         
+        </ul>
+      </div>
+    </nav>
+
+  
+     
+      <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Actions</a>
+      <ul id='dropdown1' class='dropdown-content'>
+         <li><a href="#!">Setup</a></li>
+         <li><a href="#!">credent</a></li>
+         <li class="divider" tabindex="-1"></li>
+         <li><a href="#!">web</a></li>
+      </ul>
+
+      <table class="striped">
+         <thead>
+           <tr>
+               <th>User</th>
+               <th>Cod.User</th>
+               <th>Status</th>
+           </tr>
+         </thead>
+ 
+         <tbody>
+           <tr>
+             <td>Alvin</td>
+             <td>Eclair</td>
+             <td>active</td>
+           </tr>
+           <tr>
+             <td>Alan</td>
+             <td>Jellybean</td>
+             <td>passive</td>
+           </tr>
+           <tr>
+             <td>Jonathan</td>
+             <td>Lollipop</td>
+             <td>null</td>
+           </tr>
+         </tbody>
+       </table>
+             
+
+       
+  <div class=" container">
+   
+   <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="../Recursos/img/descarga.jpeg">
+        </div>
+        <a href="#user"><img class="circle" src="../Recursos/img/images.jpeg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">User</i></a>
+   
+   </div>
+  
+   
+   <script src="../Recursos/materialize/js/materialize.min.js"></script>
+   
+   <script>
+      document.addEventListener('DOMContentLoaded', function() 
+      {
+         var elems = document.querySelectorAll('.dropdown-trigger');
+         var instances = M.Dropdown.init(elems,);
+      });
+      
+   
+   </script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, );
+  });
+
+ 
+
+ 
+   </script>
+   
+</body>
+</html>

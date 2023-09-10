@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="Recursos/materialize/css/materialize.min.css">
+
+
+<nav class="blue-grey">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><i class="material-icons">H3_APP</i></a>
+    <ul class="right hide-on-med-and-down"></ul>
+      <div class="container-background">
+        <div class="right">
+          <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Registrarse</a>
+      
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="blue-text text-darken-2">REGISTRO</span>
+                    <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <input placeholder="User" id="nUser" type="text" class="validate">
+                            <label for="nUser"></label>
+                          </div>
+                          <div class="alertass"></div>
+                          
+                        </div>
+                        
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <input id="nPass" type="password" class="validate">
+                            <label for="nPass">Password</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <input id="nemail" type="email" class="validate">
+                            <label for="nemail">email</label>
+                          </div>
+                        </div>
+                       
+                        
+                      </form>
+                    </div>
+                          
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" id="Registro">Registrarse</button>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">cancelar</a>
+                  </div>
+                </div>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal2">INICIAR SESION</a>
+      
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal">
+                  <div class="modal-content">
+                  <span class="blue-text text-darken-2">Iniciar Sesion</span>
+                    
+                  
+                    <div class="row">
+                      <form class="col s12">
+                        <form id="IniciarSesion">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input placeholder="User" id="luser" type="text" class="validate" name="username">
+                              <label for="luser"></label>
+                            </div>
+                          </div>
+                          
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="lpass" type="password" class="validate" name="password"><span class="input-group addon glyphicon glyphicon-user"></span>
+                              <label for="lpass">Password</label>
+                            </div>
+                          </div>
+                          
+                          
+                        </form>
+                      </div>
+                        </form>
+                        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" id="IniciarSesion">Iniciar</button>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">cancelar</a>
+                  </div>
+                </div>
+               
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </ul>
+  </div>
+</nav>
+
+<body>
+  
+
+
+  <div class="row">
+    <div class="col s10 m8 l4">
+      <div class="card  teal lighten-3">
+        <div class="card-image">
+          <img src="Recursos/img/images (2).jpeg" class="responsive-img" alt="Cinque terre">
+          <span class="card-title">Funcionalidades</span>
+        </div>
+        <div class="card-content">
+          <p>Descubra la nueva manera de agilizar sus procesos empresariales, obtenga una prueba demo</p>
+        </div>
+        <div class="card-action">
+          <a href="../Pagina/info.html">DEMO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+ 
+  <script src="Recursos/js/InicioSesion.js"></script>
+  <script src="Recursos/materialize/js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.modal');
+   var instances = M.Modal.init(elems);
+  });
+ 
+   // Or with jQuery
+ 
+   $(document).ready(function(){
+   $('.modal').modal();});
+   
+  </script>
+
+  
+ 
+  
+
+
+    
+</body>
+
+
+
+
+
+
+  
